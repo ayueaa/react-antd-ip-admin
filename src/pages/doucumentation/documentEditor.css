@@ -1,0 +1,15 @@
+/* DocumentEditor.css */
+
+.editorWrapper {
+  width: 100%; /* 设置编辑器外包装的宽度 */
+  min-height: 80vh; /* 提供足够的垂直空间 */
+  margin: 0 auto; /* 如有必要，居中对齐 */
+}
+
+.editorWrapper .tui-editor-defaultUI {
+  height: 80vh !important;
+}
+/* 确保编辑器本身填满容器 */
+.tui-editor-defaultUI {
+  height: 100% !important; /* 重要！确保覆盖默认样式 */
+}
