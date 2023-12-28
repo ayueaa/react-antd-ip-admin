@@ -11,9 +11,9 @@ export default function setupOverviewRoutes(server: Server) {
   server.get(
     "/overview/visable",
     (): OverviewResult => ({
-      total: 1393875,
-      increase_today: 0,
-      increase_7day: 73570,
+      total: 12345678,
+      increase_today: 2222,
+      increase_7day: 23456,
     })
   );
 
@@ -21,9 +21,9 @@ export default function setupOverviewRoutes(server: Server) {
   server.get(
     "/overview/history",
     (): OverviewResult => ({
-      total: 1099178,
-      increase_today: 0,
-      increase_7day: 49492,
+      total: 23456789,
+      increase_today: 3333,
+      increase_7day: 34567,
     })
   );
 
@@ -51,31 +51,54 @@ export default function setupOverviewRoutes(server: Server) {
   server.get("/overview/group/tag", () => ({
     "SSH Bruteforcer": 4038,
     Scanner: 408465,
-    "Telnet Bruteforcer": 22619,
+    "Telnet Bruteforcer": 32619,
     "RCE Attempt": 345,
     "Web Crawler": 57594,
     "ZMap Client": 9536,
     "Carries HTTP Referer": 453,
     "Rsync Crawler": 310,
     "Chimay Red Scanner": 1242,
-    "SSH Worm": 18527,
+    "SSH Worm": 8527,
+    "Botnet Tracker": 2345,
+    "SQL Injection": 1876,
+    "DDoS Attacker": 23348,
+    "Spam Source": 4534,
+    "Cryptocurrency Miner": 1042,
+    "Malware Distributor": 9675,
+    "XSS Attacker": 2145,
+    "Credit Card Skimmer": 756,
+    "VPN Exit Node": 1234,
+    "Anonymous Proxy": 987,
+    "FTP Bruteforcer": 1553,
+    "DNS Amplification": 324,
+    "Exploit Scanner": 442,
+    "IoT Targeter": 1009,
+    "Phishing Site": 4567,
+    "Drive-by Compromise": 787,
+    Adware: 854,
+    Malvertising: 987,
+    "Data Exfiltration": 633,
+    "Man in the Middle": 1222,
+    "Zero Day": 111,
   }));
+
   server.get("/overview/group/source", () => ({
-    osint_emergingthreats: 1757,
+    osintEmergingthreats: 1757,
     dataplane: 789060,
-    osint_ssl_blacklist: 8464,
+    osintSslBlacklist: 8464,
     zoomeye: 1983,
     greynoise: 130782,
+    spamhaus: 230782,
     urlhaus: 7049,
-    otx_unknown: 10609,
-    otx_bruteforce: 46001,
-    osint_cinsscore: 155592,
-    osint_cybercure: 12005,
-    otx_trojan: 5108,
-    otx_phishing: 2949,
-    osint_blocklist_de: 166386,
-    otx_malvertising: 77,
-    osint_greensnow: 56053,
+    otxUnknown: 10609,
+    otxBruteforce: 46001,
+    osintCinsscore: 155592,
+    osintCybercure: 12005,
+    otxTrojan: 5108,
+    otxPhishing: 2949,
+    osintBlocklistDe: 166386,
+    otxMalvertising: 77,
+    osintGreensnow: 56053,
   }));
 
   // 系统信息

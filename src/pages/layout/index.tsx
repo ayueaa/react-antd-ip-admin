@@ -16,6 +16,7 @@ import { getGlobalState } from '@/utils/getGloabal';
 import { useGuide } from '../guide/useGuide';
 import HeaderComponent from './header';
 import MenuComponent from './menu';
+import { PageFloatButtons } from './others';
 import TagsView from './tagView';
 
 const { Sider, Content } = Layout;
@@ -143,6 +144,7 @@ const LayoutPage: FC = () => {
         <Content className="layout-page-content">
           <TagsView />
           <Suspense fallback={null}>
+            <PageFloatButtons />
             <Outlet />
           </Suspense>
         </Content>
