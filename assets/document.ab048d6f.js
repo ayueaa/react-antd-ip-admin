@@ -1,0 +1,1 @@
+import{t as e}from"./index.db5181c7.js";const c=t=>e("get","/api/docs",t),p=t=>e("post","/api/docs",t),i=t=>e("get",`/api/docs/${t}`),n=t=>{const{doc_id:a,...o}=t;return e("put",`/api/docs/${a}`,o)},d=t=>e("delete",`/api/docs/${t}`);export{c as a,d as b,i as c,n as d,p as e};

@@ -1,1 +1,0 @@
-import{j as o,aX as e}from"./index.cca6eaae.js";import{T as s}from"./index.fb57ad39.js";import"./EditOutlined.018c6d1f.js";import"./styleChecker.779b73b6.js";const m=()=>(console.log("RoutePermissionPage"),o("div",{className:"permission-page",children:o(s,{className:"permission-intro",children:o(e,{id:"gloabal.tips.loginResult"})})}));export{m as default};
