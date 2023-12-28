@@ -25,8 +25,11 @@ The best practices for React Hooks with Antd and Typescript.
 </div>
 
 ## Preview
+The project utilizes **miragejs** to intercept and mock all API interface data. You can easily run and debug in the development environment to observe the display effects.
 ![Alt text](public/readme_pic/ip-manage.png)
 ![Alt text](public/readme_pic/usermanage.png)
+![Alt text](public/readme_pic/docmanage.png)
+
 ## ✨ Features
 
 - 💡 **TypeScript**: A language for application-scale JavaScript

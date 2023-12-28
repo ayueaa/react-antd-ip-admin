@@ -26,8 +26,10 @@ React Hooks + Typescript 最佳实践。
 </div>
 
 ## Preview
+项目采用了**miragejs** 对所有API接口数据进行拦截和模拟。你可以非常简单地在开发环境中运行并调试以查看展示效果。
 ![Alt text](public/readme_pic/ip-manage.png)
 ![Alt text](public/readme_pic/usermanage.png)
+![Alt text](public/readme_pic/docmanage.png)
 
 ## ✨ 特性
 
