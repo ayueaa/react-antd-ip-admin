@@ -1,4 +1,4 @@
-import type { MyRadioCardssOption } from '@/components/business/radio-cards';
+import type { MyRadioyarnCardssOption } from '@/components/business/radio-cards';
 import type { FC } from 'react';
 
 import MyRadioCards from '@/components/business/radio-cards';

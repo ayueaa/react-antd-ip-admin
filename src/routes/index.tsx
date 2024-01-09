@@ -28,13 +28,6 @@ const SearchPage = lazy(() => import(/* webpackChunkName: "search'"*/ '@/pages/c
 const TabsPage = lazy(() => import(/* webpackChunkName: "tabs'"*/ '@/pages/components/tabs'));
 const AsidePage = lazy(() => import(/* webpackChunkName: "aside'"*/ '@/pages/components/aside'));
 const RadioCardsPage = lazy(() => import(/* webpackChunkName: "radio-cards'"*/ '@/pages/components/radio-cards'));
-const BusinessBasicPage = lazy(() => import(/* webpackChunkName: "basic-page" */ '@/pages/business/basic'));
-const BusinessWithSearchPage = lazy(() => import(/* webpackChunkName: "with-search" */ '@/pages/business/with-search'));
-const BusinessWithAsidePage = lazy(() => import(/* webpackChunkName: "with-aside" */ '@/pages/business/with-aside'));
-const BusinessWithRadioCardsPage = lazy(
-  () => import(/* webpackChunkName: "with-aside" */ '@/pages/business/with-radio-cards'),
-);
-const BusinessWithTabsPage = lazy(() => import(/* webpackChunkName: "with-tabs" */ '@/pages/business/with-tabs'));
 
 const RenderRouter = () => {
   return (
@@ -81,28 +74,6 @@ const RenderRouter = () => {
         <Route
           path="component/radio-cards"
           element={<WrapperRouteComponent element={<RadioCardsPage />} titleId="title.radioCards" />}
-        />
-        <Route
-          path="business/basic"
-          element={<WrapperRouteComponent element={<BusinessBasicPage />} titleId="title.businessBasic" />}
-        />
-        <Route
-          path="business/with-search"
-          element={<WrapperRouteComponent element={<BusinessWithSearchPage />} titleId="title.businessWithSearch" />}
-        />
-        <Route
-          path="business/with-aside"
-          element={<WrapperRouteComponent element={<BusinessWithAsidePage />} titleId="title.businessWithAside" />}
-        />
-        <Route
-          path="business/with-radio-cards"
-          element={
-            <WrapperRouteComponent element={<BusinessWithRadioCardsPage />} titleId="title.businessWithRadioCards" />
-          }
-        />
-        <Route
-          path="business/with-tabs"
-          element={<WrapperRouteComponent element={<BusinessWithTabsPage />} titleId="title.businessWithTabs" />}
         />
         <Route path="*" element={<WrapperRouteComponent element={<NotFound />} titleId="title.notFound" />} />
       </Route>
